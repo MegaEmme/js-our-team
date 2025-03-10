@@ -64,6 +64,12 @@ console.log(parentElement);
 
 renderHTML(parentElement, teamMembers);
 
+//lavoro sul form
+
+
+
+
+
 
 //creo le funzioni
 
@@ -96,7 +102,7 @@ function renderHTML(parent, elements){
 function createHTMLElement(object){
 
   return `<div class="card">
-            <img class="image" src="${object.img}" alt="female1">
+            <img class="image" src="${object.img}" alt="${object.name}">
             <div class="info">
               <h2>${object.name}</h2>
               <h3>${object.role}</h3>
