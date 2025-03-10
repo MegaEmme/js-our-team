@@ -147,5 +147,7 @@ function addNewMember (event){
 
   console.log(teamMembers);
 
+  memberFormElement.reset();
+
   renderHTML(parentElement,teamMembers);
 };
