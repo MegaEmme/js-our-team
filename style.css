@@ -17,6 +17,10 @@ header{
     margin-bottom: 60px;
 }
 
+h1{
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
 .title{
     color: #e53170;
     font-size: 40px;
@@ -35,19 +39,32 @@ header{
     height: 100px;
     background-color: black;
     margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .image{
     width: 25%;
+    max-width: 100%;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.image:hover{
+    transform: scale(1.1,1.1);
 }
 
 .info{
     padding: 10px 15px;
-    color: white;
+    color:wheat;
 }
 
 h3{
     font-weight: lighter;
+    font-size: 16px;
 }
 
 .mail{
