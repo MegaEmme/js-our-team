@@ -66,7 +66,14 @@ renderHTML(parentElement, teamMembers);
 
 //lavoro sul form
 
+const memberFormElement = document.getElementById('member-form');
+console.log(memberFormElement);
 
+memberFormElement.addEventListener('submit',function(event){
+
+  event.preventDefault();
+  console.log('ho inviato il form');
+})
 
 
 
