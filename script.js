@@ -69,11 +69,12 @@ renderHTML(parentElement, teamMembers);
 const memberFormElement = document.getElementById('member-form');
 console.log(memberFormElement);
 
-memberFormElement.addEventListener('submit',function(event){
+const nameElement = document.getElementById('name');
+const roleElement = document.getElementById('role');
+const eMailElement = document.getElementById('e-mail');
+const imageElement = document.getElementById('image-url');
 
-  event.preventDefault();
-  console.log('ho inviato il form');
-})
+memberFormElement.addEventListener('submit', addNewMember);
 
 
 
@@ -116,4 +117,35 @@ function createHTMLElement(object){
               <h3 class="mail">${object.email}</h3>
             </div>
           </div>`
+};
+
+
+//La terza serve per aggiungere un nuovo membro nel form
+
+function addNewMember (event){
+
+  event.preventDefault();
+  
+  const name = nameElement.value;
+  const role = roleElement.value; 
+  const email = eMailElement.value;
+  const img = imageElement.value;
+
+  console.log(name);
+  console.log(role);
+  console.log(email);
+  console.log(img);
+
+  const newElement = {
+    name,
+    role,
+    email,
+    img
+  }
+
+  teamMembers.push(newElement);
+
+  console.log(teamMembers);
+
+  renderHTML(parentElement,teamMembers);
 };
