@@ -87,7 +87,12 @@ h4{
 input{
     margin-bottom: 6px;
     border: none;
+    border-radius: 20px;
     text-align: center;
+}
+
+input:hover{
+    background-color: pink;
 }
 
 button{
