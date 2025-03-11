@@ -14,11 +14,21 @@
 
 header{
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    background-color: lightsteelblue;
 }
 
 h1{
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+h1:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s;
+}
+
+p{
+    margin-bottom: 20px;
 }
 
 .title{
@@ -50,7 +60,6 @@ h1{
     width: 25%;
     max-width: 100%;
     transition: all 1s;
-    overflow: hidden;
 }
 
 .image:hover{
@@ -70,6 +79,10 @@ h3{
 .mail{
     text-decoration: underline;
     color: #29a1f2;
+}
+
+footer{
+    background-color: lightseagreen;
 }
 
 h4{
