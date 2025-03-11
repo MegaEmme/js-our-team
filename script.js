@@ -76,16 +76,13 @@ const imageElement = document.getElementById('image-url');
 
 memberFormElement.addEventListener('submit', addNewMember);
 
-
-
-
 //creo le funzioni
 
 // la prima crea ed appende un elemento html ad un genitore per quanti sono gli elementi dell'oggetto preso in considerazione
 
 function renderHTML(parent, elements){
-  console.log(parent);
-  console.log(elements);
+  // console.log(parent);
+  // console.log(elements);
 
   let items = '';
 
@@ -93,7 +90,7 @@ function renderHTML(parent, elements){
 
     let currentElement=elements[i];
 
-    console.log(currentElement);
+    // console.log(currentElement);
 
     items += createHTMLElement(currentElement);
 
@@ -118,7 +115,6 @@ function createHTMLElement(object){
             </div>
           </div>`
 };
-
 
 //La terza serve per aggiungere un nuovo membro nel form
 
